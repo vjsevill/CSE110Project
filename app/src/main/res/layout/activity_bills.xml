@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorAccent">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/colorAccent"
+			android:orientation="vertical"
+			tools:context="com.rip.roomies.activities.bills.Bills">
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/colorPrimary"
+				android:gravity="center"
+				android:padding="10dp"
+				android:text="@string/bill_title"
+				android:textColor="@color/colorAccent"
+				android:textSize="35dp" />
+
+			<Button
+				android:id="@+id/add_bill_btn"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center|right"
+				android:background="@android:color/transparent"
+				android:text="+"
+				android:textColor="@color/colorAccent"
+				android:textSize="30dp"/>
+
+			</FrameLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/label_pink"
+				android:orientation="horizontal"
+				android:paddingBottom="5dp"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp"
+				android:paddingTop="5dp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight=".40"
+					android:text="@string/bill_youowe_total"
+					android:textColor="@color/colorAccent"
+					android:textSize="25dp"
+					/>
+
+				<TextView
+					android:id="@+id/bill_youowe_balance"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight=".60"
+					android:gravity="right"
+					android:text="$0.00"
+					android:textColor="@color/colorAccent"
+					android:textSize="30dp"
+					/>
+
+			</LinearLayout>
+
+			<!--INCLUDE BOTH "YOU OWE" AND "YOUR REQUESTS" HAVE REMINDER BUTTON NEXT TO
+				"YOUR REQUEST" ITEMS-->
+			<com.rip.roomies.views.BillContainer
+				android:id="@+id/bills_youowe_container"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:isScrollContainer="true"
+				android:orientation="vertical">
+			</com.rip.roomies.views.BillContainer>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/green"
+				android:orientation="horizontal"
+				android:paddingBottom="5dp"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp"
+				android:paddingTop="5dp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight=".40"
+					android:text="@string/bill_oweyou_total"
+					android:textColor="@color/colorAccent"
+					android:textSize="25sp" />
+
+				<TextView
+					android:id="@+id/bill_oweyou_balance"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight=".60"
+					android:gravity="right"
+					android:text="$0.00"
+					android:textColor="@color/colorAccent"
+					android:textSize="30sp" />
+
+			</LinearLayout>
+
+			<com.rip.roomies.views.BillContainer
+				android:id="@+id/bills_oweyou_container"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:isScrollContainer="true"
+				android:orientation="vertical">
+			</com.rip.roomies.views.BillContainer>
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="bottom"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_gravity="start|center"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/bill_IOU_total"
+						android:textColor="@color/colorPrimary"
+						android:textSize="40sp"
+						/>
+
+					<TextView
+						android:id="@+id/bill_total"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:text="$0.00"
+						android:textColor="@color/colorPrimary"
+						android:textSize="40sp" />
+				</LinearLayout>
+
+			</FrameLayout>
+		</LinearLayout>
+	</ScrollView>
+</FrameLayout>

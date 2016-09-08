@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.rip.roomies">
+
+	<uses-permission android:name="android.permission.INTERNET"/>
+
+	<uses-feature
+		android:name="android.hardware.touchscreen.multitouch"
+		android:required="false"/>
+
+	<application
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+		<activity
+			android:name=".activities.login.SplashScreen"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/title_activity_splash_screen"
+			android:theme="@style/FullscreenTheme">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".activities.login.Login"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/title_activity_login"
+			android:theme="@style/FullscreenTheme"/>
+		<activity
+			android:name=".activities.login.CreateUser"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/title_activity_create_user"
+			android:parentActivityName=".activities.login.Login"
+			android:theme="@style/FullscreenTheme">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.rip.roomies.activities.login.Login"/>
+		</activity>
+		<activity
+			android:name=".activities.login.PassRetrieve"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/title_activity_password_recovery"
+			android:parentActivityName=".activities.login.Login"
+			android:theme="@style/FullscreenTheme">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.rip.roomies.activities.login.Login"/>
+		</activity>
+		<activity
+			android:name=".activities.groups.CreateGroup"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/title_activity_create_group"
+			android:theme="@style/FullscreenTheme">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.rip.roomies.activities.groups.GroupChoice"/>
+		</activity>
+		<activity
+			android:name=".activities.groups.GroupChoice"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/title_activity_group_choice"
+			android:theme="@style/FullscreenTheme">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.rip.roomies.activities.login.Login"/>
+		</activity>
+		<activity
+			android:name=".activities.home.Home"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/title_activity_home"
+			android:theme="@style/FullscreenTheme"/>
+		<activity
+			android:name=".activities.groups.JoinGroup"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/title_activity_join_group"
+			android:theme="@style/FullscreenTheme">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.rip.roomies.activities.groups.GroupChoice"/>
+		</activity>
+		<activity
+			android:name=".activities.groups.InviteUsers"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/title_activity_invite_users"
+			android:theme="@style/FullscreenTheme"/>
+		<activity
+			android:name=".activities.duties.CreateDuty"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:theme="@style/FullscreenTheme"
+			android:windowSoftInputMode="adjustNothing"/>
+		<activity
+			android:name=".activities.duties.ListAllDuties"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:theme="@style/FullscreenTheme"/>
+		<activity
+			android:name=".activities.duties.ModifyDuty"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:theme="@style/FullscreenTheme"
+			android:windowSoftInputMode="adjustNothing"/>
+		<activity
+			android:name=".activities.duties.ViewDuty"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:theme="@style/FullscreenTheme"/>
+		<activity android:name=".activities.profile.Profile"/>
+		<activity android:name=".activities.profile.ChangePassword"/>
+		<activity
+			android:name=".activities.bills.Bills"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".activities.bills.ModifyBill"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".activities.bills.AddBill"
+			android:label="@string/title_activity_add_bill"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".activities.tasks.ListMyTasks"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:theme="@style/FullscreenTheme"/>
+		<activity
+			android:name=".activities.duties.ListDutyLogs"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:theme="@style/FullscreenTheme"/>
+		<activity
+			android:name=".activities.goods.CreateGood"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:windowSoftInputMode="adjustNothing"
+			android:theme="@style/FullscreenTheme"/>
+		<activity
+			android:name=".activities.goods.ListAllGoods"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:theme="@style/FullscreenTheme"/>
+		<activity
+			android:name=".activities.goods.ListGoodLogs"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:theme="@style/FullscreenTheme"/>
+		<activity
+			android:name=".activities.goods.ViewGood"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:theme="@style/FullscreenTheme"/>
+		<activity
+			android:name=".activities.goods.ModifyGood"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:theme="@style/FullscreenTheme"
+			android:windowSoftInputMode="adjustNothing"/>
+		<activity
+			android:name=".activities.bulletin.AddBulletin"
+			android:label="@string/title_activity_add_bulletin"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".activities.bulletin.ModifyBulletin"
+			android:label="@string/title_activity_modify_bulletin"
+			android:screenOrientation="portrait"/>
+
+		<!-- [START firebase_service] -->
+		<service android:name=".service.MessagingService">
+			<intent-filter>
+				<action android:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<!-- [END firebase_service] -->
+		<!-- [START firebase_iid_service] -->
+		<service android:name=".service.IDService">
+			<intent-filter>
+				<action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<!-- [END firebase_iid_service] -->
+
+	</application>
+
+</manifest>

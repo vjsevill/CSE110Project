@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.rip.roomies.activities.bills.AddBill">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorAccent"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/colorPrimary"
+			android:gravity="center"
+			android:padding="10dp"
+			android:text="@string/bill_addbill_title"
+			android:textColor="@color/colorAccent"
+			android:textSize="30dp" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/colorAccent"
+			android:orientation="vertical"
+			android:padding="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/addbill_name"
+				android:textColor="@color/colorPrimary"
+				android:textSize="30sp" />
+
+			<EditText
+				android:id="@+id/addBillDescription"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:textCursorDrawable="@null"
+				android:background="@drawable/edittextlight"
+				android:hint="@string/addbill_des_length"
+				android:inputType="textShortMessage|textMultiLine"
+				android:maxLength="100"
+				android:maxLines="3"
+				android:textColor="@color/black"
+				android:textSize="25sp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:inputType="numberDecimal"
+				android:text="@string/addbill_amount"
+				android:textColor="@color/colorPrimary"
+				android:textSize="30sp" />
+
+			<EditText
+				android:id="@+id/addBillAmount"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textCursorDrawable="@null"
+				android:layout_margin="5dp"
+				android:background="@drawable/edittextlight"
+				android:hint="$"
+				android:inputType="numberDecimal"
+				android:textColor="@color/black"
+				android:textSize="25sp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/addbill_who"
+				android:textColor="@color/colorPrimary"
+				android:textSize="30sp" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+
+				<!--ADDING ID FOR SPINNER MAKES SPINNER LARGER, PLEASE LOOK INTO THIS-->
+				<com.rip.roomies.views.UserSpinner
+					android:id="@+id/group_users_spinner"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="5dp"
+					android:background="@drawable/rec_border"
+					android:layout_weight=".8">
+
+				</com.rip.roomies.views.UserSpinner>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="30dp"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/addbill_request"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:layout_margin="5dp"
+					android:background="@drawable/rec_border_green"
+					android:padding="10dp"
+					android:text="@string/addbill_request"
+					android:textColor="@color/dark_green"
+					android:textSize="30sp" />
+
+				<Button
+					android:id="@+id/addbill_pay"
+					android:layout_width="150dp"
+					android:layout_height="match_parent"
+					android:layout_margin="5dp"
+					android:background="@drawable/rec_border_pink"
+					android:padding="10dp"
+					android:text="@string/addbill_owe"
+					android:textColor="@color/pink"
+					android:textSize="30sp" />
+
+			</LinearLayout>
+
+		</LinearLayout>
+	</LinearLayout>
+</FrameLayout>

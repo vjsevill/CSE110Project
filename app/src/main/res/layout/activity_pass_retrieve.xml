@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorPrimary"
+              android:orientation="vertical"
+              tools:context="com.rip.roomies.activities.login.PassRetrieve">
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:layout_marginTop="60dp"
+		android:id="@+id/appname" />
+
+	<EditText
+		android:id="@+id/pass_retrieve_email"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="150dp"
+		android:hint="@string/email_hint"
+		android:textCursorDrawable="@null"
+		android:inputType="text"
+		android:paddingLeft="10dp"
+		android:textColorHint="@color/text"
+		android:textSize="45sp"
+	    android:background="@drawable/underline"
+		android:textColor="@color/colorAccent"
+		/>
+
+
+	<Button
+		android:id="@+id/pass_retrieve_submit"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="send"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="20dp"
+		android:layout_marginBottom="20dp"
+		android:textColor="@color/colorPrimary"
+		android:textSize="24sp"
+		android:background="@drawable/buttons"
+		android:paddingTop="5dp"
+		android:paddingBottom="5dp"/>
+
+</LinearLayout>

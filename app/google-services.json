@@ -1,0 +1,116 @@
+{
+  "project_info": {
+    "project_number": "68014466928",
+    "firebase_url": "https://cse110-fcmtest.firebaseio.com",
+    "project_id": "cse110-fcmtest",
+    "storage_bucket": "cse110-fcmtest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68014466928:android:5920de3503a2d18c",
+        "android_client_info": {
+          "package_name": "com.google.firebase.quickstart.fcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68014466928-7moom9jh815k26rgaddgdg2dsj13s8hi.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "68014466928-42480o0pfeiohhgh5bel1sm8ug6meb2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ_yG4PZ-e2ENsJIvmy0h-HtL52SXoMzE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68014466928:android:c76838bd1a02acb0",
+        "android_client_info": {
+          "package_name": "com.example.haotutech.testfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68014466928-7moom9jh815k26rgaddgdg2dsj13s8hi.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "68014466928-42480o0pfeiohhgh5bel1sm8ug6meb2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ_yG4PZ-e2ENsJIvmy0h-HtL52SXoMzE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68014466928:android:143823617122ef59",
+        "android_client_info": {
+          "package_name": "com.rip.roomies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68014466928-7moom9jh815k26rgaddgdg2dsj13s8hi.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "68014466928-42480o0pfeiohhgh5bel1sm8ug6meb2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ_yG4PZ-e2ENsJIvmy0h-HtL52SXoMzE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

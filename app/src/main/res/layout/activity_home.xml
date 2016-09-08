@@ -1,0 +1,292 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorAccent"
+	android:orientation="vertical"
+	tools:context=".activities.home.Home">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorPrimary">
+
+		<ImageView
+			android:id="@+id/home_appname"
+			android:layout_width="170dp"
+			android:layout_height="50dp"
+			android:layout_gravity="center"
+			android:layout_marginBottom="20dp"
+			android:layout_marginLeft="40dp"
+			android:layout_marginRight="40dp"
+			android:layout_marginTop="20dp" />
+	</FrameLayout>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorAccent">
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_gravity="center_horizontal|bottom"
+				android:orientation="vertical">
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="@color/black_overlay" />
+
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:paddingBottom="5dp"
+					android:paddingLeft="10dp"
+					android:paddingTop="5dp"
+					android:weightSum="1">
+
+					<RelativeLayout
+						android:layout_width="120dp"
+						android:layout_height="120dp">
+
+						<ImageView
+							android:id="@+id/home_profilepicture"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_gravity="center_horizontal"
+							android:clickable="true"
+							android:scaleType="centerCrop" />
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_alignParentBottom="true"
+							android:layout_alignStart="@+id/home_profilepicture"
+							android:layout_alignLeft="@+id/home_profilepicture"
+							android:layout_alignRight="@+id/home_profilepicture"
+							android:layout_alignEnd="@+id/home_profilepicture"
+							android:padding="2dp"
+							android:text="@string/home_edit_profile_hint"
+							android:textSize="15sp"
+							android:gravity="center|bottom"
+							android:textColor="@color/colorAccent"
+							android:background="@color/black_overlay"/>
+					</RelativeLayout>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_marginLeft="5dp"
+						android:orientation="vertical"
+						android:weightSum="1">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:orientation="vertical"
+							android:padding="5dp"
+							android:paddingTop="5dp">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:fontFamily="sans-serif-thin"
+								android:text="@string/welcomehome"
+								android:layout_gravity="left|top"
+								android:textColor="@color/black"
+								android:textSize="20sp" />
+
+							<TextView
+								android:id="@+id/home_username"
+								android:layout_width="wrap_content"
+								android:layout_height="match_parent"
+								android:fontFamily="sans-serif"
+								android:text="Stephanie!"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:textColor="@color/black"
+								android:textSize="30dp" />
+						</LinearLayout>
+
+					</LinearLayout>
+				</LinearLayout>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="@color/black_overlay" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:paddingLeft="10dp"
+					android:paddingTop="0dp">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight=".5"
+						android:orientation="vertical"
+						android:paddingTop="5dp">
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:fontFamily="sans-serif-thin"
+							android:text="@string/youowe"
+							android:textColor="@color/black"
+							android:textSize="25dp" />
+
+						<TextView
+							android:id="@+id/home_IOU"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="$0"
+							android:textAlignment="center"
+							android:textColor="@color/green"
+							android:textSize="60dp" />
+					</LinearLayout>
+
+					<View
+						android:layout_width="1dp"
+						android:layout_height="match_parent"
+						android:background="@color/black_overlay"
+						/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight=".5"
+						android:orientation="vertical">
+
+
+						<TextView
+							android:id="@+id/to_view_my_duties"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_gravity="center"
+							android:fontFamily="sans-serif-thin"
+							android:gravity="center"
+							android:text="View My\nTasks"
+							android:textColor="@color/black"
+							android:textSize="45dp" />
+					</LinearLayout>
+				</LinearLayout>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="@color/black_overlay" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:id="@+id/home_shareditem"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:background="@color/colorPrimary"
+						android:fontFamily="sans-serif-thin"
+						android:gravity="center"
+						android:text="@string/shareditem_home"
+						android:textColor="@color/colorAccent"
+						android:textSize="50dp" />
+
+					<View
+						android:layout_width="1dp"
+						android:layout_height="match_parent"
+						android:background="@color/colorAccent" />
+
+					<TextView
+						android:id="@+id/home_overallduties"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:background="@color/colorPrimary"
+						android:fontFamily="sans-serif-thin"
+						android:gravity="center"
+						android:text="@string/overallduties_home"
+						android:textColor="@color/colorAccent"
+						android:textSize="50dp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight=".6"
+					android:layout_marginTop="10dp"
+					android:layout_marginBottom="10dp"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="0.7"
+						android:fontFamily="sans-serif"
+						android:paddingLeft="10dp"
+						android:paddingTop="5dp"
+						android:text="@string/bulletin"
+						android:textColor="@color/black"
+						android:textSize="25dp" />
+
+					<Button
+						android:id="@+id/bulletin_addbtn"
+						android:layout_width="30dp"
+						android:layout_height="30dp"
+						android:layout_gravity="center_vertical|end"
+						android:layout_marginRight="10dp"
+						android:background="@drawable/circleblue"
+						android:text="@string/plus"
+						android:textColor="@color/colorAccent"
+						android:textSize="20dp" />
+				</LinearLayout>
+
+				<TextView
+					android:id="@+id/no_bulletins_msg"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textColor="@color/black"
+					android:textSize="12pt"
+					android:padding="20dp"
+					android:visibility="gone"
+					android:text="There are no bulletins to display." />
+
+				<com.rip.roomies.views.BulletinContainer
+					android:id="@+id/bulletin_container"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:paddingBottom="10dp"
+					android:paddingLeft="10dp"
+					android:paddingRight="10dp">
+				</com.rip.roomies.views.BulletinContainer>
+
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="@color/colorAccent" />
+
+
+
+				<!--				<Button
+									android:id="@+id/to_view_my_duties"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:text="View My Duties" />
+				-->
+			</LinearLayout>
+		</FrameLayout>
+	</ScrollView>
+</LinearLayout>

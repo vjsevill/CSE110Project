@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.rip.roomies.activities.groups.InviteUsers"
+	android:orientation="vertical"
+	android:background="@color/colorPrimary"
+	android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:text="Invite Roomies\n"
+        android:textColor="@color/colorAccent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+
+
+		<EditText
+			android:id="@+id/add_user_field"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:hint="Username"
+			android:layout_marginBottom="10dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginTop="10dp"
+			android:background="@drawable/underline"
+			android:inputType="text"
+			android:paddingLeft="10dp"
+			android:paddingBottom="5dp"
+			android:textColorHint="@color/text"
+			android:textSize="20sp"
+			android:textCursorDrawable="@null"
+			android:textColor="@color/colorAccent"
+
+			/>
+
+		<Button
+			android:id="@+id/add_user_btn"
+			android:layout_width="45dp"
+			android:layout_height="match_parent"
+			android:width="30dp"
+            android:height="30dp"
+			android:text="+"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/circle"
+            android:layout_weight="0.07" />
+
+		<Button
+			android:layout_width="50dp"
+			android:layout_height="wrap_content"
+			android:text="-"
+			android:id="@+id/rem_user_btn"
+            android:width="30dp"
+            android:height="30dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"
+            android:background="@drawable/circle"/>
+
+	</LinearLayout>
+
+	<com.rip.roomies.views.UserContainer
+		android:id="@+id/invitees_container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_weight="1">
+
+	</com.rip.roomies.views.UserContainer>
+
+	<Button
+		android:id="@+id/invite_users_btn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Invite Users"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="20dp"
+		android:textColor="@color/colorPrimary"
+		android:textSize="24sp"
+		android:background="@drawable/buttons"
+		android:paddingTop="5dp"
+		android:paddingBottom="5dp"
+		/>
+
+</LinearLayout>
