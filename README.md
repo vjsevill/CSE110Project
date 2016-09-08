@@ -13,5 +13,5 @@ Spring 2016. The contributors to this project were:
 * Julian Leung
 
 The original project can be found
-[here](https://github.com/Kanurame/CSE110Project). This is copied here just
+[here](https://github.com/Kanurame/CSE110Project). This is copied here just for
 viewing convenience.
